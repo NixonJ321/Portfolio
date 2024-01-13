@@ -5,17 +5,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:    Roboto, sans-serif;
+    font-family: Roboto, sans-serif;
 }
 
 #personal__logo {
     width: 50px;
-    height: 10
-0px;
+    height: 10 0px;
 }
 
 section {
-    background-color: rgb(245,245,245);
+    background-color: rgb(245, 245, 245);
 }
 
 a {
@@ -32,13 +31,24 @@ button {
 }
 
 .click:hover {
-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .click:active {
     transform: scale(.8);
 }
 
+
+.containter {
+    padding: 50px 0px;
+}
+
+.row {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
 
 /* 
 
@@ -54,14 +64,14 @@ LANDING PAGE
     position: absolute;
     top: 50%;
     left: 50%;
-   transform: translate(-50%, -50%);
-   width: 100%;
-   max-width: 1000px;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1000px;
 }
 
 .header__para {
     font-size: 24px;
-    line-height:1.75 ;
+    line-height: 1.75;
     max-width: 450px;
     font-weight: 700
 }
@@ -74,22 +84,22 @@ LANDING PAGE
 }
 
 .purple {
-    
+
     color: rgb(106, 12, 214);
 }
 
 .mail__btn {
-   width: 70px;
-   height: 70px;
-   font-size: 32px;
-   border-radius: 50%;
-   border: none;
-   background-color: #242424;
-   color: white;
-   position: absolute;
-   bottom: 32px;
-   right: 40px;
-   
+    width: 70px;
+    height: 70px;
+    font-size: 32px;
+    border-radius: 50%;
+    border: none;
+    background-color: #242424;
+    color: white;
+    position: absolute;
+    bottom: 32px;
+    right: 40px;
+
 }
 
 .scroll {
@@ -108,16 +118,16 @@ LANDING PAGE
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .scroll__icon:after {
-content: "";
-width: 4px;
-height: 4px;
-background-color: #242424;
-border-radius: 2px; 
-animation: scroll 1000ms infinite alternate-reverse;
+    content: "";
+    width: 4px;
+    height: 4px;
+    background-color: #242424;
+    border-radius: 2px;
+    animation: scroll 1000ms infinite alternate-reverse;
 }
 
 @keyframes scroll {
@@ -164,14 +174,14 @@ p {
 .nav__link {
     margin-left: 24px;
     list-style: none;
-    
+
 }
 
 .nav__link--anchor {
     text-decoration: none;
-    font-size: 16px;   
+    font-size: 16px;
     color: #242424;
-    font-weight: 700   ;
+    font-weight: 700;
 }
 
 .sun {
@@ -196,6 +206,84 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* 
+
+PROJECTS 
+
+*/
+
+.section__title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+.project__wrapper {
+    position: relative ;
+    border-radius: 20px;
+    box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
+    overflow: hidden;
+    margin-bottom: 1000px;
+
+}
+
+.project__wrapper:hover .project__description  {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+.project__wrapper:hover .project__img {
+    transform: scale(1.07) ;
+    filter: blur(3px);
+}
+
+.project__wrapper:hover .project__wrapper--bg {
+    opacity: .7;
+
+}
+
+.project__wrapper--bg {
+    position: absolute  ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1d25;
+    opacity: 0;
+    transition: all 450ms ease;
+}
+
+.project__img {
+    width: 100%;
+    transition: all 450ms ease;
+
+}
+
+.project__description {
+    position: absolute;
+    top: 50%;
+    left: 90px;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: opacity 300ms, transform 450ms ease;
+    color: white;
+    max-width: 550px;
     
-    
+}
+
+.project__description--title {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.project__description--link {
+    color: white;
+    font-size: 20px;
+    margin-left: 16px;
+}
+
+.project__description--para {
+    margin: 16px 0px;
 }

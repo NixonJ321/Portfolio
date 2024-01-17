@@ -45,6 +45,7 @@ li {
 
 .containter {
     padding: 50px 0px;
+    width: 100%;
 }
 
 .row {
@@ -354,6 +355,55 @@ PROJECTS
     font-size: 20px;
     color: white;
     margin-left: 16px;
+}
 
+/*
+
+FOOTER
+
+*/
+
+footer {
+    background-color: black;
+    display: flex;
+}
+
+ .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+ }
+
+.invert {
 
 }
+
+ .footer__logo {
+    width: 70px;
+    height: 70px;
+    margin: 32px 0px;
+ }
+
+ .footer__social--list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+ } 
+
+ .footer__social--link {
+    margin-left: 40px;
+    color: white;
+    transform: scale(1.07);
+ }
+
+ .footer__social--link:hover {
+    transform: scale(1.07);
+ }
+
+ .footer__copyright {
+    color: white;
+    margin-top: 24px;
+ }

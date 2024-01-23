@@ -143,6 +143,7 @@ MODAL
 }
 
 .modal__about--para {
+    width: 75%;
     font-weight: 500;
     margin-bottom:32px ;
 }
@@ -152,10 +153,27 @@ MODAL
     justify-content: space-around;
 }
 
-.modal__img { 
-    width: 70px;
-    height: 70px;
+.modal__language {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.modal__imgh {
+    width: 75px
+}
+
+.modal__imgc {
+    width: 66px;
+    transform: translateY(-2px);
+}
+
+.modal__imgj {
+    width: 107px;
+    transform: translateY(-1px);
+}
+
 
 .modal__contact {
     background-color: #242424;

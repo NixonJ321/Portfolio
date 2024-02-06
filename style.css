@@ -124,16 +124,21 @@ MODAL
 }
 
 .modal__languages {
+    
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:;
+    
 }
 
 .modal__language {
     width: 25%;
+    
+    
 }
 
 .modal__language--img {
     width: 100%;
+    padding: 16px;
 }
 
 .modal__contact {
